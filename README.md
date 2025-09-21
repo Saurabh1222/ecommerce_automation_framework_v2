@@ -7,8 +7,8 @@ This project is an automated end-to-end testing framework for an e-commerce webs
 * Page Object Model (POM): A design pattern to create a maintainable and reusable test suite by separating the test logic from the page elements.
 * Allure Reports: A powerful reporting tool for generating comprehensive and interactive test reports.
 # Features
-- Page Object Model (POM): The framework uses POM to organize the code. Each web page (e.g., Login Page, Product Page, Cart Page) has a corresponding class that contains its web elements and methods for interacting with them. This ensures that if a UI element changes, only one file needs to be updated.
-- Data-Driven Testing: Test scenarios are data-driven, allowing for the execution of multiple test cases with different data sets (e.g., testing with various user credentials, product search queries, etc.). This is achieved by using Pytest's @pytest.mark.parametrize functionality.
+- Page Object Model (POM): The framework uses POM to organize the code. Each web page (e.g., Login Page) has a corresponding class that contains its web elements and methods for interacting with them. This ensures that if a UI element changes, only one file needs to be updated.
+- Data-Driven Testing: Test scenarios are data-driven, allowing for the execution of multiple test cases with different data sets (e.g., testing with various user credentials).
 - Comprehensive Reporting with Allure: The framework generates detailed and visually appealing test reports using Allure. These reports provide a clear overview of test results, including test steps, attachments (like screenshots), and test execution timelines.
 # Prerequisites
 - Python 3.x installed
@@ -63,6 +63,7 @@ This will execute all tests and save the results in the reports/allure-results d
 After the tests have run, generate the HTML report and serve it locally:
 ```allure serve ./reports/allure-results```
 The report will automatically open in your browser.
+
 
 
 
